@@ -81,8 +81,8 @@ stateDiagram-v2
     Request --> Scrapping
     Scrapping --> radarr/sonarr
     
-    radarr/sonarr --> DL-Links
-    DL-Links --> JDownloader
+    radarr/sonarr --> DLLinks
+    DLLinks --> JDownloader
     JDownloader --> radarr/sonarr
 
     radarr/sonarr --> Jellyfin/Plex/Emby
