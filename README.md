@@ -75,6 +75,7 @@ services:
         - mail
         - notifiarr
     
+```mermaid
 stateDiagram-v2
     radarr/sonarr --> Request
     Request --> Scrapping
@@ -85,6 +86,7 @@ stateDiagram-v2
     JDownloader --> radarr/sonarr
 
     radarr/sonarr --> Jellyfin/Plex/Emby
+```
 
 - Frontend
     - VueJS/Svelte as framework
