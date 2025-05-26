@@ -1,14 +1,16 @@
 ﻿services:
-  backend:
-    image: backend
-    build:
-      context: .
-      dockerfile: src/backend/Dockerfile
-
   frontend:
     image: frontend
     build:
       context: .
       dockerfile: src/frontend/Dockerfile
     ports:
-      - "80:80"
+      - "3000:80"
+  
+  backend:
+    image: backend
+    build:
+      context: .
+      dockerfile: src/backend/Dockerfile
+    ports:
+      - "3001:8080"
